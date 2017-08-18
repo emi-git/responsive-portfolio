@@ -8,47 +8,52 @@
 
     <title>My responsive portfolio</title>
     <!--<link rel="stylesheet" href="css/lib/normalize.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body>
-    <header>
-        <h1>Emily Huang</h1>
-        <h2>FRONT-END NINJA</h2>
-        <img src="" alt="logo">
+<body class="container-fluid">
+    <header class="row">
+        <figure class="col-md-6">
+            <img src="" alt="logo">
+        </figure>
+        <section class="col-md-6">
+            <h1 class="text-right">Emily Huang</h1>
+            <p class="text-right">FRONT-END NINJA</p>
+        </section>
     </header>
-    <main class="container-fluid">
-        <section>
+
+    <section class="row">
+        <figure class="col-md-12">
+            <img src="http://via.placeholder.com/1200x400" alt="">
+        </figure>
+    </section>
+    <section class="row">
+        <h2 class="col-md-12">Featured Work</h2>
+        <article class="col-md-4">
             <figure>
-                <img src="http://via.placeholder.com/1200x400" alt="">
+                <img src="http://via.placeholder.com/400x200" alt="">
             </figure>
-        </section>
-        <section class="row">
-            <h2 class="col-md-12">Featured Work</h2>
-            <article class="col-md-4">
-                <figure>
-                    <img src="http://via.placeholder.com/400x200" alt="">
-                </figure>
-                <h2>Projec Title</h2>
-                <p>Description and link for the project</p>
-            </article>
-            <article class="col-md-4">
-                <figure>
-                    <img src="http://via.placeholder.com/400x200" alt="">
-                </figure>
-                <h2>Projec Title</h2>
-                <p>Description and link for the project</p>
-            </article>
-            <article class="col-md-4">
-                <figure>
-                    <img src="http://via.placeholder.com/400x200" alt="">
-                </figure>
-                <h2>Projec Title</h2>
-                <p>Description and link for the project</p>
-            </article>
-        </section>
-    </main>
+            <h3>Projec Title</h3>
+            <p>Description and link for the project</p>
+        </article>
+        <article class="col-md-4">
+            <figure>
+                <img src="http://via.placeholder.com/400x200" alt="">
+            </figure>
+            <h3>Projec Title</h3>
+            <p>Description and link for the project</p>
+        </article>
+        <article class="col-md-4">
+            <figure>
+                <img src="http://via.placeholder.com/400x200" alt="">
+            </figure>
+            <h3>Projec Title</h3>
+            <p>Description and link for the project</p>
+        </article>
+    </section>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

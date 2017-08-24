@@ -32,11 +32,13 @@ header {
     padding-top: 1em;
 }
 
-header section h1 {
-    font-weight: 300;
+.logo {
+    width: 100%;/* fix for IE */
+    width: 10vw;
+    height: 10vw;
 }
 
-h2 {
+header section h1,h2 {
     font-weight: 300;
 }
 
@@ -55,13 +57,26 @@ hr {
     max-width: 100%;
 }
 
+
+
+@media (max-width: 400px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+    }
+}
 @media (max-width: 600px) {
   html {
     font-size: 12px;
   }
 }
+
 @media (min-width: 1000px) {
   html {
     font-size: 20px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
   }
 }
